@@ -1,5 +1,5 @@
-# Todo App using PHP
-A Simple Todo app using php with database!
+# Book List App using Node.js
+A Simple Book list app using nodejs with database!
 
 ## Requirements
 * vscode
