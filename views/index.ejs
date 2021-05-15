@@ -1,0 +1,33 @@
+<%- include('./includes/head.ejs') %>
+
+<body>
+  <nav>
+    <a href="/add-book">Add Book</a>
+  </nav>
+  <main class="main">
+    <% if (books.length > 0) { %>
+      <% for (let book of books) { %>
+      <form action="/details" method="POST" class="element-form">
+        <div class="title">
+          <%= book.title %>
+        </div>
+        <div class="author">
+          <%= book.author %>
+        </div>
+        <div class="summary">
+          <%= book.summary %>
+        </div>
+        <div class="buttons">
+          <button type="submit">Details</button>
+          <a href="/delete-book/<%= book.id %>">Delete</a>
+        </div>
+        <input type="hidden" name="id" value="<%= book.id %>">
+      </form>
+      
+      <% } %>
+    <% } else { %>
+      <h1>No books available!</h1>
+    <% } %>
+  </main>
+
+<%- include('./includes/tail.ejs') %>

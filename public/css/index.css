@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+body {
+  background: #c8c8c8;
+}
+
+nav {
+  padding: 1rem 1rem;
+  float: right;
+}
+
+nav a {
+  color: crimson;
+  background: black;
+  padding: .5rem 1.25rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.main {
+  margin-top: 2rem;
+  width: 100vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .element-form {
+  width: 15rem;
+  height: 20rem;
+  background: crimson;
+  padding: 1rem;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: .25rem;
+}
+
+.main .title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.main .author {
+  font-size: 1.5rem;
+}
+
+.main .summary {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.main .buttons {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 30%;
+}
+
+.main .buttons button {
+  font-size: 1rem;
+  padding: .35rem 1.5rem;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 2.5px;
+  background: #c8c8c8;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.main .buttons button:focus {
+  outline: none;
+}
+
+.main .buttons button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.main .buttons a {
+  padding: .35rem 1.5rem;
+  text-decoration: none;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 2.5px;
+  background: #c8c8c8;
+  font-weight: bold;
+}
+
+.main .buttons a:focus {
+  outline: none;
+}
+
+.main .buttons a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.book-form {
+  margin: 5rem auto;
+  width: 75vw;
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: .2rem;
+}
+
+.book-form .inputs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.book-form .inputs label {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.book-form .inputs label, .book-form .inputs input {
+  margin: 10px;
+  width: 90%;
+  border: none;
+}
+
+.book-form .inputs input {
+  height: 40px;
+  border-radius: .1rem;
+  outline: 2px solid #000000;
+  padding: 5px;
+}
+
+.book-form button {
+  font-size: 1rem;
+  padding: .35rem 1.5rem;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 2.5px;
+  background: #c8c8c8;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.book-form button:focus {
+  outline: none;
+}
+
+.book-form button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.detail {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.detail .title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.detail .author {
+  font-size: 1.5rem;
+}
